@@ -1,0 +1,106 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #26648e;
+}
+.img-dash {
+    width: 400px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background: #53d2dc;
+    padding: 20px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.title {
+    font-size: 28px;
+    color: #f0e8db;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    position: relative;
+    text-align: center;
+}
+
+.message {
+    color: #f0e8db;
+    font-size: 20px;
+    font-weight: 525;
+    text-align: center;
+}
+.form-group {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label input {
+    width: 100%;
+    padding: 10px 10px 20px 10px ;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.form label input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: #000323;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label input:focus + span,
+.form label input:valid + span {
+    top: 25px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.form label input:valid + span {
+    color: #4f8fc0;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    background: #fbc66c;
+    padding: 10px;
+    border-radius: 10px;
+    color: #000323;
+    font-size: 16px;
+    transform: 0.3s ease;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: #d8a03f;
+    transition: 0.3s;
+}
+
